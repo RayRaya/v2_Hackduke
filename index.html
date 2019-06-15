@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "main.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+		<title>IntlStuds</title>
+	</head>
+	<body>
+		<header>
+            <div class="row">
+                <img src="resources/img/logo.png">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">College Search</a></li>
+                        <li><a href="#">Academic Requirements</a></li>
+                        <li><a href="#">International Tips</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="main-text">
+                    <h1>Want to get the best college ?<br> Don't worry we are here to help you</h1>
+                    <div class="main-links">
+                        <a href="#" class="btn btn-full">Sign Up</a>
+                        <a href="#" class="btn btn-ghost">Login</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            
+        </section>
+    </body>    
+        
+        
+        
+        
+        
+        
+<!--        
+        
+        <div class = "content">
+			<header>
+				<nav class = "navLink">
+					<img src = "IntlStuds.png">
+					<ul>
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "University_Search.html">College Search</a></li>
+						<li><a href = "Academic_Requirements.html">Academic Requirements</a></li>
+						<li><a href = "IT.html">International Tips</a></li>
+						<li><a href = "contacts.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+	<div class = "clear"></div>
+  <aside>
+  <div class="container">
+    <canvas id= "myChart"></canvas>
+  <script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+
+    // Global Options
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+		let intNational = 1100000;
+		let residentialStud = 20020000;
+		let pacificCount = residentialStud*0.10;
+		let hispanicCount = residentialStud*0.13;
+		let afriCount = residentialStud*0.14;
+		let caucaCount = residentialStud*0.63;
+    let massPopChart = new Chart(myChart, {
+      type:'pie',
+      data:{
+        labels:['International','Hispanic/Latino','Caucasian','African American', 'Pacific Islanders'],
+        datasets:[{
+          label:'Student Count',
+          data:[
+            intNational ,
+						hispanicCount,
+						caucaCount,
+						afriCount,
+						pacificCount
+          ],
+          backgroundColor:[
+            'rgb(255,0,0)',
+            'rgb(0,0,255)',
+						'rgb(0,255,0)',
+						'rgb(255, 122,0)',
+						'rgb(122,255,255)'
+
+          ],
+          borderWidth:1,
+          borderColor:'#777',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#000'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'Secondary Student Enrollment 2017-18',
+          fontSize:25
+        },
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'#000'
+          }
+        },
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },
+        tooltips:{
+          enabled:true
+        }
+      }
+    });
+    </script>
+    </div>
+			</aside>
+			<section >
+				<h1>Inequality between Opportunities for college students.</h1>
+				<p>Every year nearly 1 million international students choose the United States as a location to obtain higher learning, and
+					each year these learning centers seem to charge these students small fortunes[1]. Universities around the country typically do
+					not offer the same amount of finacial opportunities to these students as they do the local population. One could argue that this is likely
+					due to the fact that university want to give back to their community or residing state. That they would like to further the
+					bond between the local people and the university.Although the main goal of a Univeristy is to equally inform and teach those who strive
+					to excel and yearn to change the world for the better. This seemes to be an altruistic vision for some international students,
+					yet we plan to change that.
+				</p>
+			</section>
+
+
+		<article>
+			<h1>Our Mission:</h1>
+			<p>Our mission is to help fellow international undergraduate students to settle comfortably in U.S.
+				while they go along with their busy student lives. Usually, their time is lost adjusting to their
+				new life as adults and living in a new environment. </p>
+
+			<br />
+
+			<h1>Works Cited</h1>
+			<ol>
+					<li>J. Zong, J. B. J. Zong, and J. Batalova, “International Students in the United States,”
+						migrationpolicy.org, 05-Jun-2018. [Online].
+						Available: https://www.migrationpolicy.org/article/international-students-united-states.
+						[Accessed: 14-Oct-2018].</li>
+					<li>“U.S. college enrollment statistics 1965-2027,” Statista. [Online].
+						Available: https://www.statista.com/statistics/183995/us-college-enrollment-and-projections-in-public-and-private-institutions/.
+						[Accessed: 14-Oct-2018].</li>
+					<li>“Status and Trends in the Education of Racial and Ethnic Minorities,” National Center for Education Statistics (NCES) Home Page, a part of the U.S. Department of Education. [Online]. Available: https://nces.ed.gov/pubs2010/2010015/indicator6_24.asp. [Accessed: 14-Oct-2018].
+					</li>
+			</ol>
+		</article>
+		<div class = "clear"></div>
+			<footer>
+				<br />
+				<hr />
+				<p style = "float:left;">
+					HackDuke 10/13/18
+				</p>
+				<p style = "float:right;">
+					Raymar R, Ashutosh T, Sarang R,Omkar S,Qasim Wani
+					</ul>
+				</p>
+			</footer>
+	</body>
+</html>
